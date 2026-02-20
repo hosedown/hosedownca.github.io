@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7f9;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 60px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about li {
+    margin: 10px 0;
+}
+
+.services {
+    background: #ffffff;
+}
+
+.card {
+    background: #e9f5f9;
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.pricing {
+    background: #f0f4f8;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffb703;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background: #fb8500;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
