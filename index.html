@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <nav id="topNav">
     <a href="#home" class="logo-link"></a>
+    
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 
     <div class="nav-content">
         <div class="nav-links">
             <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
+            <a href="#why-us" class="nav-link">Why Us</a>
+            <a href="#about" class="nav-link">Process</a>
             <a href="#services" class="nav-link">Services</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#gallery" class="nav-link">Gallery</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
         <a href="tel:+1YOURNUMBER" class="nav-cta">Call Now</a>
@@ -25,84 +29,226 @@
 </nav>
 
 <main id="main-container">
-    <section id="home" class="snap-section">
-        <div class="hero-content">
-            <div class="hero-visual">
-                <img src="images/logo.png" alt="HoseDown Sanitation" class="hero-logo">
-                <div class="slideshow">
-                    <img class="slide active" src="images/bin_before.jpg" alt="Before">
-                    <img class="slide" src="images/bin_after.jpg" alt="After">
+    <section id="home" class="snap-section hero-section">
+        <div class="hero-content grid-layout">
+            <div class="hero-text">
+                <h1>Clean Bins. <br><span class="highlight">No More Stink.</span></h1>
+                <p>Professional trash bin cleaning in Chino. We pressure wash, degrease, and deodorize in 15 minutes—right in your driveway.</p>
+                <div class="cta-group">
+                    <a class="cta" href="#services">View Plans</a>
+                    <a class="cta secondary" href="#pricing">Only $25/Bin</a>
                 </div>
             </div>
-            <div class="hero-text">
-                <h2>Professional Trash Bin Sanitizing</h2>
-                <p>We stop the stink and kill the germs.</p>
-                <a class="cta" href="#services">See Our Plans</a>
+
+            <div class="hero-visual">
+                <div id="slideshow" class="slideshow">
+                    <div id="slideshow-content" class="slideshow-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="snap-section">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <h2>Why Choose HoseDown?</h2>
+                <p>We take the chore you hate and make it disappear.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="icon">📍</span>
+                    <h3>Local & Family Owned</h3>
+                    <p>We live where we work. Quality service for our Chino neighbors.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="icon">♻️</span>
+                    <h3>Eco-Conscious</h3>
+                    <p>Biodegradable soaps and water-efficient high-pressure systems.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="icon">⚡</span>
+                    <h3>15-Min Service</h3>
+                    <p>We’re in and out. You don't even need to be home.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="snap-section">
         <div class="content-wrapper">
-            <h2>Why Clean Your Trash Bins?</h2>
-            <ul class="benefit-list">
-                <li>Eliminate foul odors</li>
-                <li>Remove bacteria & maggots</li>
-                <li>Keep your garage fresh</li>
-                <li>Eco-friendly washing</li>
-            </ul>
+            <h2>The 3-Step Refresh</h2>
+            <div class="process-steps">
+
+                <!-- Step 1: Arrival -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-num">01</span>
+                        <h3>We Arrive</h3>
+                    </div>
+                    <p>
+                        We arrive on your scheduled trash day.
+                    </p>
+                    <p>
+                        Just leave your bins out in the driveway and make sure we have access to 
+                        <strong>water and electricity</strong>.
+                    </p>
+                    <p>
+                        We’ll set up quickly and get ready to blast away the grime.
+                    </p>
+                </div>
+
+                <!-- Step 2: Deep Clean -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-num">02</span>
+                        <h3>Deep Clean</h3>
+                    </div>
+                    <p>
+                        Using high-pressure washing, we cut through all grime, residue, and leftover "mystery juice."
+                    </p>
+                    <p> 
+                        Our setup includes both a soap dispenser and a degreasing solution for maximum effectiveness. 
+                    </p>
+                    <p> 
+                        The process takes about 15 minutes per bin.
+                    </p>
+                </div>
+
+                <!-- Step 3: Sanitize & Deodorize -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-num">03</span>
+                        <h3>Sanitize & Deodorize</h3>
+                    </div>
+                    <p>
+                        Finally, we apply an eco-friendly deodorizer and natural cleaners, leaving your bins 
+                        sanitized, odor-free, and fresh.
+                    </p>
+                    <p>
+                        Your garage and curb will thank you! 
+                        Quick, safe, and completely green.
+                    </p>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="services" class="snap-section">
-        <div class="content-wrapper">
-            <h2>Our Services</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>One-Time Cleaning</h3>
-                    <p>Deep wash, disinfect, deodorize.</p>
-                </div>
-                <div class="card">
-                    <h3>Monthly Service</h3>
-                    <p>Keep your bins clean year-round.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="content-wrapper pricing-wrapper">
+            <h2>Simple, Transparent Pricing</h2>
 
-    <section id="pricing" class="snap-section">
-        <div class="content-wrapper">
-            <h2>Simple Pricing</h2>
-            <p class="price-tag">$25 per bin (one-time)</p>
-            <p>Discounts for recurring monthly plans.</p>
-        </div>
-    </section>
+            <div class="pricing-grid">
 
-    <section id="gallery" class="snap-section">
-        <div class="content-wrapper">
-            <h2>Before & After</h2>
-            <div class="gallery-grid">
-                <img src="images/bin_before.jpg" alt="Before">
-                <img src="images/bin_after.jpg" alt="After">
+                <!-- Monthly -->
+                <div class="pricing-card featured">
+                    <div class="card-tag">Most Popular</div>
+                    <h3>Monthly Plan</h3>
+                    <p class="card-price">$32<span>/mo</span></p>
+                    <ul class="pricing-features">
+                        <li>✔ Up to 2 bins included</li>
+                        <li>✔ +$5 per extra bin</li>
+                        <li>✔ Monthly freshness & odor control</li>
+                        <li>✔ Cancel anytime</li>
+                    </ul>
+                    <a href="#contact" class="cta">Start Monthly</a>
+                </div>
+
+                <!-- Bi-Weekly -->
+                <div class="pricing-card">
+                    <h3>Bi-Weekly Plan</h3>
+                    <p class="card-price">$42<span>/mo</span></p>
+                    <ul class="pricing-features">
+                        <li>✔ Up to 2 bins included</li>
+                        <li>✔ +$5 per extra bin</li>
+                        <li>✔ Every 2 weeks = maximum freshness</li>
+                        <li>✔ Ideal during summer months</li>
+                    </ul>
+                    <a href="#contact" class="cta secondary">Go Bi-Weekly</a>
+                </div>
+
+                <!-- One Time -->
+                <div class="pricing-card">
+                    <h3>One-Time Deep Clean</h3>
+                    <p class="card-price">$55<span>/visit</span></p>
+                    <ul class="pricing-features">
+                        <li>✔ Up to 2 bins included</li>
+                        <li>✔ +$10 per extra bin</li>
+                        <li>✔ Event-ready or move-in clean</li>
+                        <li>✔ Quick 15-min service</li>
+                    </ul>
+                    <a href="#contact" class="cta secondary">Book Once</a>
+                </div>
+
             </div>
+            <p style="margin-top:10px; font-size:0.9em; text-align:center; color:#555;">
+                *All treatments use eco-friendly, safe cleaning solutions.*
+            </p>
         </div>
     </section>
 
     <section id="contact" class="snap-section">
         <div class="content-wrapper">
-            <h2>Get a Free Quote</h2>
-            <p>Text us your address and number of bins.</p>
-            <div class="cta-group">
-                <a class="cta" href="sms:+1YOURNUMBER">Text Now</a>
-                <a class="cta secondary" href="tel:+1YOURNUMBER">Call Now</a>
+
+            <div class="contact-box">
+                <h2>Ready for Fresh Bins?</h2>
+                <p>Text us your address for a quick quote. We’ll confirm your next trash day and handle the rest.</p>
+
+                <div class="cta-group">
+                    <a class="cta" href="sms:+1YOURNUMBER">Text Now</a>
+                    <a class="cta secondary" href="tel:+1YOURNUMBER">Call Now</a>
+                </div>
             </div>
+
+            <div class="contact-extra">
+
+                <div class="faq-mini">
+                    <h3>Quick Questions</h3>
+
+                    <div class="faq-item">
+                        <p><strong>Do I need to be home?</strong><br>
+                        Nope. Just leave your empty bins curbside on trash day.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p><strong>Do you bring your own water and power?</strong><br>
+                        We connect to your outdoor water spigot and a standard outlet to run our washer. 
+                        It’s quick, safe, and uses less water than most garden hoses.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p><strong>How long does it take?</strong><br>
+                        About 15 minutes per bin. We wash, degrease, and sanitize inside and out.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <p><strong>Is it messy?</strong><br>
+                        Not at all. We control runoff and leave your driveway cleaner than we found it.</p>
+                    </div>
+                </div>
+
+                <div class="service-note">
+                    <p>
+                        Multiple bins? HOA property? Rental turnover? 
+                        Just send a message — we’ll figure it out.
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="final-cta-line">
+                Clean bins. No flies. No smell. No excuses.
+            </p>
+
         </div>
+
+        <footer class="footer">
+            <p>© 2026 HoseDown Sanitation LLC</p>
+        </footer>
     </section>
 </main>
 
-<footer>
-    <p>© 2026 HoseDown Sanitation LLC</p>
-</footer>
+
 
 <script src="script.js"></script>
 </body>
